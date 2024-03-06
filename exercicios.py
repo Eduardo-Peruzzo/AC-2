@@ -7,7 +7,7 @@ bissexto(ano), que recebe um valor inteiro e retorna um valor booleano, informan
 """
 
 def eq_seg_grau(a, b, c):
-    return (-b + (b**2 - 4*a*c)**(1/2)) / 2*a, (-b - (b**2 - 4*a*c)**(1/2)) / 2*a
+    return (-b + (b**2 - 4*a*c)**(1/2)) / (2*a), (-b - (b**2 - 4*a*c)**(1/2)) / (2*a)
 
 def bissexto(ano):
     return ((ano % 100 == 0 and ano % 400 == 0) and ano % 4 == 0) or (ano % 4 == 0 and ano % 100 != 0)
